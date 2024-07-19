@@ -11,7 +11,7 @@ do{
     nombre = prompt("Ingresa tu nombre")
     if(nombre ==""){
         alert("Debes introducir un nombre")
-        console.log(nombre)
+        
     }
 }
 while (nombre =="")
@@ -20,8 +20,7 @@ let apellido
 do{
     apellido = prompt("Ingresa tu apellido")
     if(apellido ==""){
-        alert("Debes introducir un apellido")
-        console.log(apellido)
+        alert("Debes introducir un apellido")        
     }
  }
 while (apellido =="")
@@ -31,7 +30,6 @@ do{
     direccion = prompt("Nombre de la calle")
     if(direccion ==""){
         alert("Debes introducir una calle")
-        console.log(direccion)
     }
 }   
 while (direccion =="")
@@ -41,11 +39,12 @@ do{
     altura = parseInt(prompt("Indica la altura"))
     if (isNaN(altura)){
         alert("Debes introducir una altura")
-        console.log (altura)
     }
 }   
 while (isNaN(altura))
 }   
+
+
 
 const cartaPlatos = ["bife con pure", "spaguetti con salsa", "ensalda cesar", "pizza", "empandas"]
 alert("MENU \nBife con pure - $1500 \nSpaguetti con salsa - $1000 \nEnsalda Cesar - $1200 \nPizza - $800 \nEmpanadas - $100 c/u")
@@ -55,38 +54,23 @@ alert("MENU \nBife con pure - $1500 \nSpaguetti con salsa - $1000 \nEnsalda Cesa
 
 
 
-let bifeConPure = 1500
-    console.log(1500)
+login()
 
-let spaguettiConSalsa = 1000
-    console.log(1000)
 
-let ensaldaCesar = 1200
-    console.log(1200)
 
-let pizza = 800
-    console.log(800)
+let continuar = true;
+let total = 0;
     
-let empanadas = 100
-    console.log(100)  
+// Asignar precios a cada plato
+const precios = {
+    1: 1500, // Precio del Bife con puré
+    2: 1000,  // Precio del Spaguetti con salsa
+    3: 1200,  // Precio de la Ensalada César
+    4: 800,  // Precio de la Pizza
+    5: 100  // Precio de las Empanadas
+}
 
 
-    login()
-
-
-
-    let continuar = true;
-    let total = 0;
-    
-    // Asignar precios a cada plato
-    const precios = {
-        1: 1500, // Precio del Bife con puré
-        2: 1000,  // Precio del Spaguetti con salsa
-        3: 1200,  // Precio de la Ensalada César
-        4: 800,  // Precio de la Pizza
-        5: 100  // Precio de las Empanadas
-    }
-    
     while(continuar){
     
         let platos = parseInt(prompt("Elije una opción: \n 1-Bife con puré  \n 2-Spaguetti con salsa \n 3-Ensalada César \n 4-Pizza \n 5-Empanadas \n 6-Salir"));
