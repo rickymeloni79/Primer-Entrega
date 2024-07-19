@@ -73,7 +73,7 @@ const precios = {
 
     while(continuar){
     
-        let platos = parseInt(prompt("Elije una opción: \n 1-Bife con puré  \n 2-Spaguetti con salsa \n 3-Ensalada César \n 4-Pizza \n 5-Empanadas \n 6-Salir"));
+        let platos = parseInt(prompt("Elije una opción: \n 1-Bife con puré  \n 2-Spaguetti con salsa \n 3-Ensalada César \n 4-Pizza \n 5-Empanadas"));
     
         switch(platos){
             case 1: 
@@ -101,9 +101,6 @@ const precios = {
                 total += precios[5]; // Sumar el precio al total
                 break;
     
-            case 6:
-                continuar = false;
-                break;
     
             default:
                 alert("Debes elegir una opción válida");
