@@ -51,12 +51,7 @@ const cartaPlatos = ["bife con pure", "spaguetti con salsa", "ensalda cesar", "p
 alert("MENU \nBife con pure - $1500 \nSpaguetti con salsa - $1000 \nEnsalda Cesar - $1200 \nPizza - $800 \nEmpanadas - $100 c/u")
 
 
-//let cartaPlatos
-    alert("MENU \nBife con pure - $1500 \nSpaguetti con salsa - $1000 \nEnsalda Cesar - $1200 \nPizza - $800 \nEmpanadas - $100 c/u")
 
-//let cartaBebidas
-
-//alert("MENU \nAgua con gas $150 \nGaseosa $200 \nJugo $250 \nVino $700 \nCerveza $550")
 
 
 
@@ -76,52 +71,71 @@ let empanadas = 100
     console.log(100)  
 
 
+    login()
 
 
 
+    let continuar = true;
+    let total = 0;
+    
+    // Asignar precios a cada plato
+    const precios = {
+        1: 1500, // Precio del Bife con puré
+        2: 1000,  // Precio del Spaguetti con salsa
+        3: 1200,  // Precio de la Ensalada César
+        4: 800,  // Precio de la Pizza
+        5: 100  // Precio de las Empanadas
+    }
+    
+    while(continuar){
+    
+        let platos = parseInt(prompt("Elije una opción: \n 1-Bife con puré  \n 2-Spaguetti con salsa \n 3-Ensalada César \n 4-Pizza \n 5-Empanadas \n 6-Salir"));
+    
+        switch(platos){
+            case 1: 
+                alert("Elegiste Bife con puré");
+                total += precios[1]; // Sumar el precio al total
+                break;
+            
+            case 2:
+                alert("Elegiste Spaguetti con salsa");
+                total += precios[2]; // Sumar el precio al total
+                break;
+    
+            case 3:
+                alert("Elegiste Ensalada César");
+                total += precios[3]; // Sumar el precio al total
+                break;
+    
+            case 4:
+                alert("Elegiste Pizza");
+                total += precios[4]; // Sumar el precio al total
+                break;
+    
+            case 5:
+                alert("Elegiste Empanadas");
+                total += precios[5]; // Sumar el precio al total
+                break;
+    
+            case 6:
+                continuar = false;
+                break;
+    
+            default:
+                alert("Debes elegir una opción válida");
+                break;
+        }
+    
+        let confirmacion = prompt("Deseas agregar algo mas? (si/no)")
+        if( confirmacion == "no")
+            continuar = false
+            }
 
-// let continuar = true
-
-//     while(continuar){
-
-//     let platos = parseInt(prompt("Elije una option: \n 1-Bife con pure  \n 2-Spaguetti con salsa \n 3-Ensalada Cesar \n 4-Pizza \n 5-Empanadas \n 6-salir"))
+    
+    // Mostrar el total al usuario
+    alert("El total de tu pedido es: $" + total + "\nLlegara en 1 hs aprox" + "\nGracias");
 
 
-//     switch(platos){
-//         case 1:
-//             alert("Elegiste Bife con pure")
-//             break
-        
-//         case 2:
-//             alert("Elegiste Sapaguetti con salsa")
-//             break
-
-//         case 3:
-//             alert("Elegiste Ensalda Cesar")
-//             break
-
-//         case 4:
-//             alert("Elegiste Pizza")
-//             break
-
-//         case 5:
-//             alert("Elegiste Emapanadas")
-//             break
-
-//         default:
-//             alert("Debes elegir una opcion")
-        
-        
-//     }
-
-//     let confirmacion = prompt("Deseas agregar algo mas? (si/no)")
-//     if( confirmacion == "no")
-//         continuar = false
-   
-//     }
-
-   
-  
 
 
 
