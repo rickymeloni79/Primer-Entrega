@@ -44,25 +44,6 @@ while (isNaN(altura))
 
 
 
-function aceptaPedido(){   
-
-    let confirmar = true 
-
-    confirm("El total de tu pedido es: $" + total +" "+ "\nConfirma su pedido? (si/no)") // Mostrar el total al usuario
-    if(confirmar == true){
-        alert("Tu pedido llegara en 1 hs aprox" + "\nGracias")}
-    else
-        alert("No importa sera la proxima. Gracias")
-    }
-
-
-
-
-    
-
-
-
-
 //Saludo INICIAL
 
 let saludo
@@ -141,10 +122,17 @@ const precios = {
         }
 
 
-//LLAMDO FUNCION aceptaPedido()  
+        let confirmar
 
-  aceptaPedido()
+        confirm("El total de tu pedido es: $" + total +" "+ "\nConfirma su pedido?") // Mostrar el total al usuario
+        if(confirmar == true){
+            alert("Tu pedido llegara en 1 hs aprox" + "\nGracias")}
+        else {
+            alert("No importa sera la proxima. Gracias")}
+
+
     
+
 
 
 
