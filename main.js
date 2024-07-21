@@ -2,6 +2,8 @@
 
 //FUNCIONES
 
+//Funcion Log in
+
 function login(){
     confirm("Ingresa tus datos para continuar")
 let nombre
@@ -41,6 +43,8 @@ do{
 }   
 while (isNaN(altura))
 }   
+
+
 
 
 
@@ -121,6 +125,7 @@ const precios = {
 
         }
         alert("El total de tu pedido es: $" + total) // Mostrar el total al usuario
+
 
 
 
