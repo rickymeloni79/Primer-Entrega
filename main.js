@@ -120,18 +120,17 @@ const precios = {
             }
 
         }
+        alert("El total de tu pedido es: $" + total) // Mostrar el total al usuario
 
 
-        let confirmar
-
-        confirm("El total de tu pedido es: $" + total +" "+ "\nConfirma su pedido?") // Mostrar el total al usuario
-        if(confirmar == true){
-            alert("Tu pedido llegara en 1 hs aprox" + "\nGracias")}
-        else {
-            alert("No importa sera la proxima. Gracias")}
 
 
-    
+let confirmar = prompt("Confirma su pedido? (si/no)")
+    if(confirmar ==="si"){
+        alert("Tu pedido llegara en 1 hs aprox" + "\nGracias")}
+    else {
+        alert("No importa sera la proxima. Gracias")}
+   
 
 
 
